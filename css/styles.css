@@ -1,28 +1,69 @@
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: rgb(154, 154, 219);
+  height: 10vh;
 }
 
 body {
-    background-color: #FFF;
-    /* background-image: url('../img/mars_bg.jpg');
+  background-color: rgba(248, 163, 113, 0.753);
+  /* background-image: url('../img/mars_bg.jpg');
     background-repeat: no-repeat; 
     background-size: cover; */
-   
-
 }
 
-header {
-    background-color: rgb(154, 154, 219);
-    height: 5vh;
+/* main {
+   height: 90vh; 
+} */
+
+.description {
+  background-color: rgb(200, 129, 103);
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/mars_colony2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-main{
-    height: 90vh;
+.contentLeft {
+  color: #fff;
+  /* height: 300px; */
+  max-width: 600px;
+  text-align: center;
 }
 
+/* .contentRight {
+} */
 
-footer{
-    background-color: cornflowerblue;
-    height: 5vh;
+.formSection {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../assets/img/rocket_launch.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+  height: 5vh;
 }
