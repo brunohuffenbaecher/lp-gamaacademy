@@ -1,49 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LP</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel to Mars</title>
+    <link rel="icon" href="./assets/img/mars_logo2.png" />
     <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <p>Logo</p>
+      <div class="header">
+        <a href="#"
+          ><img
+            class="img_logo"
+            src="./assets/img/mars_logo2.png"
+            alt="mars logo"
+        /></a>
+      </div>
     </header>
     <main>
-        <section class="description"> 
-            <div class="contentLeft">
-                <h1>Traveling to MARS have never been that easy</h1>
-                <p>Have you ever wanted to visit the red planet?</p>
-                <p>Now you can.</p>
-            </div>
-            <!-- <div class="contentRight">
-                <img src="./assets/img/mars_colony.jpg"/>
-            </div> -->
-        </section>
+      <section class="description">
+        <div class="content">
+          <h1>
+            Traveling to
+            <strong style="color: rgba(255, 136, 0, 0.87)">MARS</strong> has
+            never been so easy.
+          </h1>
+          <h1>Or cheap.</h1>
+          <p>Have you ever wanted to visit the red planet?</p>
+          <p>
+            Well, now you
+            <span style="color: rgba(255, 136, 0, 0.87)">can</span>.
+          </p>
+        </div>
+      </section>
 
-        <section class="formSection">
-            <div>
-                <p>Do you want to be the first in line?</p>
-                <p>Subscribe to know more.</p>
-            </div>
-            <div id="formDiv" style="text-align: center;">
-                <form action="" id="form" >
-                    <input id='name' type="name" required placeholder="Your name"/>
-                    <input id = 'email' type="email" required placeholder="Your e-mail"/>
-                    <input type="submit" value="I WANT IT!"/>
-                    
-                </form>
-                <span id="done"  ></span>
-            </div>
-        </section>
-
-
+      <section class="formSection">
+        <div class="formDescription">
+          <p>Sales will start soon.</p>
+          <p>
+            Do you want to be the
+            <span style="color: rgba(255, 136, 0, 0.87)">first</span> in line?
+          </p>
+          <p>Subscribe and get the offers before anyone else.</p>
+        </div>
+        <div class="formDiv" id="formDiv" style="text-align: center">
+          <form action="" id="form">
+            <input id="name" type="name" required placeholder="Your name" />
+            <input id="email" type="email" required placeholder="Your e-mail" />
+            <input type="submit" value="SUBSCRIBE" />
+          </form>
+          <span id="done"></span>
+        </div>
+      </section>
     </main>
-    <footer>All rights reserved.</footer>
-    
+    <footer>
+      <div class="footerDiv">
+        <div class="developedBy">
+          <span>Developed by </span> <span> Bruno Huffenbaecher</span>
+        </div>
+        <div class="socialMedia">
+          <a
+            href="https://www.linkedin.com/in/brunohuffenbaecher/"
+            target="_blank"
+          >
+            <img src="./assets/img/linkedin_logo.png" alt="linkedin logo" />
+          </a>
+          <a href="https://github.com/brunohuffenbaecher" target="_blank">
+            <img src="./assets/img/github_logo.png" alt="github logo" />
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="./scripts/index.js"></script>
-</body>
+  </body>
 </html>

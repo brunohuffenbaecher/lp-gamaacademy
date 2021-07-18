@@ -7,8 +7,27 @@ html {
   scroll-behavior: smooth;
 }
 header {
-  background-color: rgb(154, 154, 219);
+  background-color: rgb(191, 133, 96);
+
   height: 10vh;
+
+  background-image: url("../assets/img/mars_colony2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header {
+  background-color: rgb(255, 255, 255, 0.5);
+  height: inherit;
+  /* width: 100vw; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_logo {
+  width: 8vh;
 }
 
 body {
@@ -24,9 +43,10 @@ body {
 
 .description {
   background-color: rgb(200, 129, 103);
-  height: 500px;
-  width: 100vw;
+  min-height: 600px;
+  /* width: 100vw; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("../assets/img/mars_colony2.jpg");
@@ -36,11 +56,27 @@ body {
   background-position: center;
 }
 
-.contentLeft {
-  color: #fff;
+.content {
+  background-color: rgb(000, 000, 000, 0.45);
+  color: white;
   /* height: 300px; */
-  max-width: 600px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px #000000;
+  margin-top: 30px;
+  max-width: 80vw;
   text-align: center;
+  padding: 15px 10px 15px 10px;
+
+  border-radius: 10px;
+}
+.content h1 {
+  font-size: 3rem;
+  /* margin-bottom: 10px; */
+}
+.content p {
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 /* .contentRight {
@@ -55,15 +91,94 @@ body {
 
   background-image: url("../assets/img/rocket_launch.jpg");
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 50% 0;
+}
+
+.formDescription {
+  background-color: rgb(000, 000, 000, 0.45);
+  color: white;
+  /* height: 300px; */
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px #000000;
+  margin-top: 30px;
+  max-width: 80vw;
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.formDescription p {
+  margin-bottom: 20px;
+}
+
+input {
+  border-radius: 5px;
+  padding: 4px;
+  height: 20px;
+  width: 200px;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+input[type="submit"] {
+  width: 150px;
+  height: 35px;
+  padding: 4px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 footer {
+  height: 8vh;
+
+  bottom: 0;
+
+  background-image: url("../assets/img/rocket_launch.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.footerDiv {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  background-color: cornflowerblue;
-  height: 5vh;
+  background-color: rgb(255, 255, 255, 0.5);
+  height: inherit;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 1.2rem;
+}
+.socialMedia {
+  margin: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialMedia img {
+  height: 6vh;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+  }
+  .footerDiv {
+    font-size: 1rem;
+  }
+  .developedBy {
+    display: flex;
+    flex-direction: column;
+  }
 }
