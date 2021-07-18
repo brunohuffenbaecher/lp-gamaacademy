@@ -132,6 +132,13 @@ input[type="submit"] {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
+span[id="done"] {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #000000;
+  margin-top: 15px;
+}
 
 footer {
   height: 8vh;
