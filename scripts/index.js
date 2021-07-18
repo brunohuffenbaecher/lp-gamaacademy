@@ -1,7 +1,6 @@
 window.addEventListener("load", start);
 
 function start() {
-  console.log("Loaded!");
   const form = document.getElementById("form");
 
   form.addEventListener("submit", formSubmit);

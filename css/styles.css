@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 header {
   background-color: rgb(191, 133, 96);
 
@@ -17,24 +18,22 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-.header {
+.headerDiv {
   background-color: rgb(255, 255, 255, 0.5);
   height: inherit;
   /* width: 100vw; */
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.img_logo {
+.headerLogo {
   width: 8vh;
 }
 
 body {
   background-color: rgba(248, 163, 113, 0.753);
-  /* background-image: url('../img/mars_bg.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover; */
 }
 
 /* main {
@@ -44,27 +43,33 @@ body {
 .description {
   background-color: rgb(200, 129, 103);
   min-height: 600px;
-  /* width: 100vw; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/img/mars_colony2.jpg");
+
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
 }
+.description1 {
+  background-image: url("../assets/img/mars_colony2.jpg");
+}
+.description2 {
+  background-image: url("../assets/img/rocket.jpg");
+}
 
 .content {
   background-color: rgb(000, 000, 000, 0.45);
   color: white;
-  /* height: 300px; */
+  width: 90%;
   font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
+
   text-shadow: 1px 1px 2px #000000;
   margin-top: 30px;
-  max-width: 80vw;
+  width: 90vw;
   text-align: center;
   padding: 15px 10px 15px 10px;
 
@@ -75,8 +80,9 @@ body {
   /* margin-bottom: 10px; */
 }
 .content p {
+  font-size: 1.9rem;
   margin-bottom: 5px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /* .contentRight {
@@ -104,7 +110,7 @@ body {
   font-size: 1.8rem;
   text-shadow: 1px 1px 2px #000000;
   margin-top: 30px;
-  max-width: 80vw;
+  max-width: 90vw;
   text-align: center;
   padding: 15px 10px 15px 10px;
 
@@ -131,6 +137,7 @@ input[type="submit"] {
   padding: 4px;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 span[id="done"] {
   color: white;
@@ -138,6 +145,10 @@ span[id="done"] {
   font-size: 1.2rem;
   text-shadow: 1px 1px 2px #000000;
   margin-top: 15px;
+}
+input[type="submit"]:hover {
+  background-color: coral;
+  color: white;
 }
 
 footer {
@@ -179,7 +190,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80vw;
   }
   .footerDiv {
     font-size: 1rem;
